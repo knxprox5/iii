@@ -1,7 +1,7 @@
 import React from 'react';
 
 // تصغير الشاشة الداخلية على عرض الجوال فقط مع الإبقاء على حجم إطار الهاتف ثابتاً
-const SamsungPhone = ({ className = '', children }) => {
+const SamsungPhone = ({ className = '', children, screenImageSrc = '', screenImageAlt = 'صورة داخل شاشة الهاتف', imageFit = 'cover' }) => {
   return (
     <div className={`relative phone-frame ${className}`} aria-label="هاتف سامسونج">
       <picture>
