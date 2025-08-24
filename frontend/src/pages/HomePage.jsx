@@ -189,16 +189,11 @@ const HomePage = () => {
               <div ref={phoneRef} className="relative mx-auto">
                 <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-3xl blur-3xl opacity-20 scale-110" aria-hidden></div>
                 <div className="relative z-10">
-                  <SamsungPhone>
-                    {/* Interactive screen with the uploaded image filling perfectly */}
-                    <OptimizedImage
-                      src="https://customer-assets.emergentagent.com/job_unpack-root-1/artifacts/qugvmbfa_867224471999050232.jpeg"
-                      alt="منطاد فوق صحراء"
-                      className="w-full h-full"
-                      lazy={false}
-                      style={{ aspectRatio: '9 / 19' }}
-                    />
-                  </SamsungPhone>
+                  <SamsungPhone
+                    screenImageSrc="/images/desert-balloon.jpeg"
+                    screenImageAlt="منطاد فوق صحراء"
+                    className=""
+                  />
                 </div>
               </div>
             </div>
