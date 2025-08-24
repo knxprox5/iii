@@ -184,12 +184,17 @@ body {
     --ps-bottom-sm: 2.2%;
     --ps-radius-sm: 20px;
     --ps-overscan: 0.9%;
+    /* عالج فراغ أعلى الجوال بزيادة overscan للأعلى فقط */
+    --ps-ov-top: 1.2%;
+    --ps-ov-right: 0.9%;
+    --ps-ov-bottom: 0.9%;
+    --ps-ov-left: 0.9%;
   }
   .phone-screen { 
-    top: calc(var(--ps-top-sm, 2.2%) - var(--ps-overscan)); 
-    left: calc(var(--ps-left-sm, 3.0%) - var(--ps-overscan)); 
-    right: calc(var(--ps-right-sm, 3.0%) - var(--ps-overscan)); 
-    bottom: calc(var(--ps-bottom-sm, 2.2%) - var(--ps-overscan)); 
+    top: calc(var(--ps-top-sm, 2.2%) - var(--ps-ov-top)); 
+    left: calc(var(--ps-left-sm, 3.0%) - var(--ps-ov-left)); 
+    right: calc(var(--ps-right-sm, 3.0%) - var(--ps-ov-right)); 
+    bottom: calc(var(--ps-bottom-sm, 2.2%) - var(--ps-ov-bottom)); 
     border-radius: var(--ps-radius-sm, 20px); 
   }
 }
