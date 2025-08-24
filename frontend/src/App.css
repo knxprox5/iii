@@ -162,15 +162,11 @@ body {
 .phone-screen {
   /* overscan لتجاوز الإطار بكسلات قليلة وإخفائها أسفل صورة الإطار لضمان عدم ظهور أي حواف */
   --ps-overscan: 0.6%;
-  /* Overscan لكل جهة على حدة لضبط أدق */
-  --ps-ov-top: var(--ps-ov-top, var(--ps-overscan));
-  --ps-ov-right: var(--ps-ov-right, var(--ps-overscan));
-  --ps-ov-bottom: var(--ps-ov-bottom, var(--ps-overscan));
-  --ps-ov-left: var(--ps-ov-left, var(--ps-overscan));
-  top: calc(var(--ps-top, 1.6%) - var(--ps-ov-top));
-  left: calc(var(--ps-left, 2.15%) - var(--ps-ov-left));
-  right: calc(var(--ps-right, 2.15%) - var(--ps-ov-right));
-  bottom: calc(var(--ps-bottom, 1.6%) - var(--ps-ov-bottom));
+  /* Overscan: استخدم قيماً لكل جهة عند التعيين، أو سقط إلى overscan العام */
+  top: calc(var(--ps-top, 1.6%) - var(--ps-ov-top, var(--ps-overscan)));
+  left: calc(var(--ps-left, 2.15%) - var(--ps-ov-left, var(--ps-overscan)));
+  right: calc(var(--ps-right, 2.15%) - var(--ps-ov-right, var(--ps-overscan)));
+  bottom: calc(var(--ps-bottom, 1.6%) - var(--ps-ov-bottom, var(--ps-overscan)));
   border-radius: var(--ps-radius, 26px);
 }
 
