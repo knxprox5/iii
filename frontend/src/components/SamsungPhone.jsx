@@ -9,7 +9,7 @@ const SamsungPhone = ({ className = '', children, screenImageSrc = '', screenIma
         <img
           src="/images/s24.png"
           alt="Samsung Galaxy S24 Ultra"
-          className="absolute inset-0 w-full h-full object-contain pointer-events-none select-none z-10"
+          className="absolute inset-0 w-full h-full object-contain pointer-events-none select-none z-20"
           fetchPriority="high"
           decoding="async"
           width={320}
