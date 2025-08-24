@@ -22,6 +22,7 @@ import {
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import SamsungPhone from '../components/SamsungPhone';
+import OptimizedImage from '../components/OptimizedImage';
 import TrustMetrics from '../components/TrustMetrics';
 
 const HomePage = () => {
