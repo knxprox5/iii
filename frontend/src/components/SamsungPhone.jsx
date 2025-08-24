@@ -40,7 +40,7 @@ const SamsungPhone = ({ className = '', children, screenImageSrc = '', screenIma
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: imagePosition,
                 // لمنع أي ظهور لحواف نتيجة وضع contain على شاشات معينة
-                backgroundColor: '#000'
+                backgroundColor: 'transparent'
               }}
               aria-label={screenImageAlt}
               role="img"
