@@ -153,7 +153,7 @@ body {
 }
 
 /* شاشة الهاتف: تقليل الهوامش لملء الشاشة أكثر */
-.phone-screen { top: 2.5%; left: 3%; right: 3%; bottom: 2.8%; }
+.phone-screen { top: 1.9%; left: 2.4%; right: 2.4%; bottom: 2%; }
 
 /* على الجوال فقط (<640px): تقليل الهوامش أكثر */
 @media (max-width: 639px) {
