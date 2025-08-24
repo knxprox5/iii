@@ -190,22 +190,14 @@ const HomePage = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-3xl blur-3xl opacity-20 scale-110" aria-hidden></div>
                 <div className="relative z-10">
                   <SamsungPhone>
-                    {/* Example interactive content inside the screen */}
-                    <div className="p-2 space-y-2">
-                      <div className="p-2 rounded-lg bg-gray-50 border">
-                        <div className="text-xs font-semibold text-gray-900">شحن سريع وآمن</div>
-                        <div className="text-xs text-gray-600">خدمة الدفع الإلكتروني</div>
-                      </div>
-                      <button className="w-full rounded-lg text-white text-xs py-1.5 bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 transition-colors">اشحن الآن</button>
-                      <div className="grid grid-cols-2 gap-1.5">
-                        <div className="h-12 bg-white border rounded-lg shadow-sm flex items-center justify-center">
-                          <span className="text-xs text-gray-500">🎮</span>
-                        </div>
-                        <div className="h-12 bg-white border rounded-lg shadow-sm flex items-center justify-center">
-                          <span className="text-xs text-gray-500">💳</span>
-                        </div>
-                      </div>
-                    </div>
+                    {/* Interactive screen with the uploaded image filling perfectly */}
+                    <OptimizedImage
+                      src="/images/uploads/desert-balloon.jpeg"
+                      alt="منطاد فوق صحراء"
+                      className="w-full h-full"
+                      lazy={false}
+                      style={{ aspectRatio: '9 / 19' }}
+                    />
                   </SamsungPhone>
                 </div>
               </div>
