@@ -32,12 +32,18 @@ const SamsungPhone = ({ className = '', children, screenImageSrc = '', screenIma
       >
         <div className="w-full h-full overflow-hidden">
           {screenImageSrc ? (
-            <img
-              src={screenImageSrc}
-              alt={screenImageAlt}
-              className={`w-full h-full object-${imageFit}`}
-              loading="eager"
-              decoding="async"
+            <div
+              className="w-full h-full"
+              style={{
+                backgroundImage: `url(${screenImageSrc})`,
+                backgroundSize: imageFit === 'contain' ? 'contain' : 'cover',
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: imagePosition,
+                // لمنع أي ظهور لحواف نتيجة وضع contain على شاشات معينة
+                backgroundColor: '#000'
+              }}
+              aria-label={screenImageAlt}
+              role="img"
             />
           ) : (
             children
