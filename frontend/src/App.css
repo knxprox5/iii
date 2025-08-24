@@ -178,14 +178,14 @@ body {
 @media (max-width: 639px) {
   /* معايرة للجوال الصغير */
   .phone-frame {
-    --ps-top-sm: 2.2%;
+    --ps-top-sm: 2.0%;
     --ps-left-sm: 3.0%;
     --ps-right-sm: 3.0%;
     --ps-bottom-sm: 2.2%;
     --ps-radius-sm: 20px;
     --ps-overscan: 0.9%;
     /* عالج فراغ أعلى الجوال بزيادة overscan للأعلى فقط */
-    --ps-ov-top: 1.2%;
+    --ps-ov-top: 1.8%;
     --ps-ov-right: 0.9%;
     --ps-ov-bottom: 0.9%;
     --ps-ov-left: 0.9%;
