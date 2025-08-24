@@ -121,6 +121,12 @@ body {
 .phone-frame { 
   width: 180px; 
   height: 360px; 
+  /* معايرة افتراضية لملائمة شاشة s24 */
+  --ps-top: 1.5%;
+  --ps-left: 2.1%;
+  --ps-right: 2.1%;
+  --ps-bottom: 1.5%;
+  --ps-radius: 26px;
 }
 
 /* تكبير تدريجي للشاشات الأكبر */
