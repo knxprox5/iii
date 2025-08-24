@@ -35,11 +35,10 @@ const SamsungPhone = ({ className = '', children, screenImageSrc = '', screenIma
             <div
               className="w-full h-full"
               style={{
-                backgroundImage: `url(${screenImageSrc})`,
+                backgroundImage: screenImageSrc ? `url(${screenImageSrc})` : 'none',
                 backgroundSize: imageFit === 'contain' ? 'contain' : 'cover',
                 backgroundRepeat: 'no-repeat',
-                backgroundPosition: imagePosition,
-                // لمنع أي ظهور لحواف نتيجة وضع contain على شاشات معينة
+                backgroundPosition: imagePosition || 'center center',
                 backgroundColor: 'transparent'
               }}
               aria-label={screenImageAlt}
