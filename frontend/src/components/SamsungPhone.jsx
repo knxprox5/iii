@@ -20,10 +20,15 @@ const SamsungPhone = ({ className = '', children, screenImageSrc = '', screenIma
 
       {/* منطقة الشاشة - تتقلص على الجوال فقط عبر أصناف CSS responsive */}
       <div
-        className="absolute bg-white rounded-3xl overflow-hidden shadow-inner phone-screen"
+        className={`absolute ${tight ? 'rounded-[28px]' : 'rounded-3xl'} overflow-hidden phone-screen`}
         role="region"
         aria-label="شاشة الهاتف"
         tabIndex={0}
+        style={{
+          // إزالة أي padding ضمني وضبط الخلفية لتجنب حواف بيضاء
+          backgroundColor: 'transparent',
+          boxShadow: 'none'
+        }}
       >
         <div className="w-full h-full overflow-hidden">
           {screenImageSrc ? (
