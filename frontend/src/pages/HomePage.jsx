@@ -192,7 +192,7 @@ const HomePage = () => {
                   <SamsungPhone>
                     {/* Interactive screen with the uploaded image filling perfectly */}
                     <OptimizedImage
-                      src="/images/uploads/desert-balloon.jpeg"
+                      src="https://customer-assets.emergentagent.com/job_unpack-root-1/artifacts/qugvmbfa_867224471999050232.jpeg"
                       alt="منطاد فوق صحراء"
                       className="w-full h-full"
                       lazy={false}
