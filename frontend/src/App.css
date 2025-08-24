@@ -152,13 +152,29 @@ body {
   } 
 }
 
-/* شاشة الهاتف: تقليل الهوامش لملء الشاشة أكثر */
-.phone-screen { top: 1.9%; left: 2.4%; right: 2.4%; bottom: 2%; }
+/* شاشة الهاتف - باستخدام متغيرات لتضبيط دقيق حسب أبعاد إطار الجهاز */
+.phone-screen {
+  top: var(--ps-top, 1.6%);
+  left: var(--ps-left, 2.15%);
+  right: var(--ps-right, 2.15%);
+  bottom: var(--ps-bottom, 1.6%);
+  border-radius: var(--ps-radius, 26px);
+}
 
-/* على الجوال فقط (<640px): تقليل الهوامش أكثر */
+/* على الجوال فقط (<640px): تضييق إضافي لتفادي الحواف */
 @media (max-width: 639px) {
-  /* تقليل الهوامش في الجوال لاستغلال المساحة بشكل أفضل */
-  .phone-screen { top: 3.2%; left: 4.2%; right: 4.2%; bottom: 3.2%; }
+  .phone-screen {
+    top: var(--ps-top-sm, 2.6%);
+    left: var(--ps-left-sm, 3.6%);
+    right: var(--ps-right-sm, 3.6%);
+    bottom: var(--ps-bottom-sm, 2.6%);
+    border-radius: var(--ps-radius-sm, 22px);
+  }
+}
+
+/* على الشاشات الكبيرة جداً (>=1280px): تصحيح طفيف للزوايا */
+@media (min-width: 1280px) {
+  .phone-screen { border-radius: var(--ps-radius-lg, 28px); }
 }
 
 /* Responsive helpers - تحسين النص في الجوال */
