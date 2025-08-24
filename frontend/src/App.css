@@ -169,13 +169,15 @@ body {
 
 /* على الجوال فقط (<640px): تضييق إضافي لتفادي الحواف */
 @media (max-width: 639px) {
-  .phone-screen {
-    top: var(--ps-top-sm, 2.6%);
-    left: var(--ps-left-sm, 3.6%);
-    right: var(--ps-right-sm, 3.6%);
-    bottom: var(--ps-bottom-sm, 2.6%);
-    border-radius: var(--ps-radius-sm, 22px);
+  /* معايرة للجوال الصغير */
+  .phone-frame {
+    --ps-top-sm: 2.2%;
+    --ps-left-sm: 3.0%;
+    --ps-right-sm: 3.0%;
+    --ps-bottom-sm: 2.2%;
+    --ps-radius-sm: 20px;
   }
+  .phone-screen { top: var(--ps-top-sm, 2.2%); left: var(--ps-left-sm, 3.0%); right: var(--ps-right-sm, 3.0%); bottom: var(--ps-bottom-sm, 2.2%); border-radius: var(--ps-radius-sm, 20px); }
 }
 
 /* على الشاشات الكبيرة جداً (>=1280px): تصحيح طفيف للزوايا */
