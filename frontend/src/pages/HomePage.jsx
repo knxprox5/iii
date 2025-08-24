@@ -160,7 +160,7 @@ const HomePage = () => {
             <div className="col-span-1 origin-right scale-25 sm:scale-35 md:scale-55 lg:scale-75 xl:scale-100">
               <div className="text-center lg:text-right">
                 <div className="inline-block bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full text-[1.12rem] lg:text-lg font-semibold tracking-tight leading-tight lg:tracking-normal lg:leading-normal mb-6 inline-badge">
-                  المنصة الرائدة في حلول الدفع الألكتروني في اليمن
+                  المنصة الرائدة في حلول الدفع الألكتروني في اليمن • E1
                 </div>
                 <p className="hero-subtitle text-[clamp(1.5rem,5.2vw,1.65rem)] md:text-[1.6rem] lg:text-[1.9rem] text-gray-700 mb-8 leading-[clamp(2.4rem,6.9vw,2.6rem)] md:leading-[2.35rem] lg:leading-[2.7rem] font-semibold">
                   نمنحك تجربة دفع وشحن آمنة وسلسة، مصمم لتلبية معاملاتك المالية اليومية بأعلى درجات الكفاءة والموثوقية بواجهة عصرية وسهلة الاستخدام، يجعل التعامل الرقمي أسرع وأكثر متعة مع دعم العملات الرقمية والبطاقات الإلكترونية مسبقة الدفع مثل لتجربة مبتكرة وموثوقة بين يديك
