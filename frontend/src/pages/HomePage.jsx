@@ -192,7 +192,9 @@ const HomePage = () => {
                   <SamsungPhone
                     screenImageSrc="/images/desert-balloon.jpeg"
                     screenImageAlt="منطاد فوق صحراء"
-                    className=""
+                    imageFit="cover"
+                    imagePosition="center center"
+                    tight={true}
                   />
                 </div>
               </div>
