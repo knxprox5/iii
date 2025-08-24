@@ -160,10 +160,12 @@ body {
 
 /* شاشة الهاتف - باستخدام متغيرات لتضبيط دقيق حسب أبعاد إطار الجهاز */
 .phone-screen {
-  top: var(--ps-top, 1.6%);
-  left: var(--ps-left, 2.15%);
-  right: var(--ps-right, 2.15%);
-  bottom: var(--ps-bottom, 1.6%);
+  /* overscan لتجاوز الإطار بكسلات قليلة وإخفائها أسفل صورة الإطار لضمان عدم ظهور أي حواف */
+  --ps-overscan: 0.6%;
+  top: calc(var(--ps-top, 1.6%) - var(--ps-overscan));
+  left: calc(var(--ps-left, 2.15%) - var(--ps-overscan));
+  right: calc(var(--ps-right, 2.15%) - var(--ps-overscan));
+  bottom: calc(var(--ps-bottom, 1.6%) - var(--ps-overscan));
   border-radius: var(--ps-radius, 26px);
 }
 
